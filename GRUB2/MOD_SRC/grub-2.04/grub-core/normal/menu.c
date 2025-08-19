@@ -948,6 +948,14 @@ run_menu (grub_menu_t menu, int nested, int *auto_boot)
             VTOY_COMM_HOTKEY("VTOY_F6_CMD");
             break;
         case GRUB_TERM_KEY_F7:
+		case '7':
+            VTOY_COMM_HOTKEY("VTOY_F7_CMD");
+            break;
+        case GRUB_TERM_KEY_F8:
+        case '8':
+            VTOY_COMM_HOTKEY("VTOY_F8_CMD");
+            break;		  
+        case GRUB_TERM_KEY_F9:
             menu_fini ();
             if (g_ventoy_terminal_output == 0)
             {
